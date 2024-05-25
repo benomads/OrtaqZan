@@ -15,7 +15,7 @@ public class ElasticEmbeddingStoreConfig {
             .serverUrl("https://my-deployment-08331c.es.us-central1.gcp.cloud.es.io")
             .userName("elastic")
             .password("idgCIxgG0GeNaj5l1uhPWrps")
-            .dimension(368)
+            .dimension(768)
             .build();
     }
 

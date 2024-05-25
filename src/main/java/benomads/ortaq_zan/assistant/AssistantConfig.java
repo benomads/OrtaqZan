@@ -60,18 +60,6 @@ public class AssistantConfig {
                 .embeddingStore(embeddingStore)
                 .build();
             ingestor.ingest(loadedDocuments);
-//            TextSegment segment1 = TextSegment.from("I like football.");
-//            Embedding embedding1 = embeddingModel.embed((TextSegment) loadedDocuments).content();
-//            embeddingStore.add(embedding1, (TextSegment) loadedDocuments);
-//
-//            Thread.sleep(1000);
-//
-//            Embedding queryEmbedding = embeddingModel.embed("Сколько коз было взято во время написание Конституции и где это было, говорится почему??").content();
-//            List<EmbeddingMatch<TextSegment>> relevant = embeddingStore.findRelevant(queryEmbedding, 1);
-//            EmbeddingMatch<TextSegment> embeddingMatch = relevant.get(0);
-//
-//            System.out.println(embeddingMatch.score()); // 0.81442887
-//            System.out.println(embeddingMatch.embedded().text()); // I like football.
         };
 
 
