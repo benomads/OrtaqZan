@@ -63,7 +63,8 @@ public class AssistantConfig {
         return args -> {
             var resource = resourceLoader.getResource("classpath:data/some-test-2.txt");
             var loadDocument = loadDocument(resource.getFile().toPath());
-            var splitter = DocumentSplitters.recursive(100, 0);
+            var splitter = DocumentSplitters.recursive(100,
+                                                        0, tokenizer);
             var ingestor = EmbeddingStoreIngestor.builder()
                 .embeddingStore(embeddingStore)
                 .embeddingModel(embeddingModel)
