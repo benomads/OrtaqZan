@@ -1,10 +1,7 @@
 package benomads.ortaq_zan.assistant;
 
 import benomads.ortaq_zan.service.AssistantService;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import reactor.core.publisher.Flux;
 
 @RestController
@@ -17,14 +14,14 @@ public class AssistantController {
         this.assistantService = assistantService;
     }
 
-    @GetMapping("/chat-with-token")
-    public Flux<String> chatWithToken(@RequestParam("userMessage") String userMessage,
-                                      @RequestParam("memoryId") int id) {
+    @PostMapping()
+    public Flux<String> chatWithAssistant(@RequestParam("userMessage") String userMessage,
+                                          @RequestParam("memoryId") int id) {
         if (userMessage == null || userMessage.isEmpty()) {
             return Flux.error(new IllegalArgumentException("User message cannot be empty"));
         }
 
-        return assistantService.chatWithToken(id, userMessage);
+        return assistantService.chatWithAssistant(id, userMessage);
     }
 
 

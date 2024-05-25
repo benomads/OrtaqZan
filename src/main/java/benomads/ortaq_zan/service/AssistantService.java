@@ -15,8 +15,7 @@ public class AssistantService {
         this.assistant = assistant;
     }
 
-
-    public Flux<String> chatWithToken(int memoryId, String userMessage) {
+    public Flux<String> chatWithAssistant(int memoryId, String userMessage) {
         Sinks.Many<String> sink = Sinks.many().unicast().onBackpressureBuffer();
 
         assistant.chatWithToken(memoryId, userMessage)
