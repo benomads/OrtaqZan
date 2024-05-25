@@ -8,4 +8,5 @@ public class OrtaqZanApplication {
     public static void main(String[] args) {
         SpringApplication.run(OrtaqZanApplication.class, args);
     }
+
 }

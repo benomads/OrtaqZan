@@ -75,7 +75,22 @@
             <version>0.30.0</version>
         </dependency>
 
+        <dependency>
+            <groupId>dev.langchain4j</groupId>
+            <artifactId>langchain4j-document-parser-apache-tika</artifactId>
+            <version>0.31.0</version>
+        </dependency>
 
+        <dependency>
+            <groupId>dev.langchain4j</groupId>
+            <artifactId>langchain4j-document-parser-apache-pdfbox</artifactId>
+            <version>0.31.0</version>
+        </dependency>
+        <dependency>
+            <groupId>dev.langchain4j</groupId>
+            <artifactId>langchain4j-cassandra</artifactId>
+            <version>0.31.0</version>
+        </dependency>
 
         <dependency>
             <groupId>org.projectlombok</groupId>
