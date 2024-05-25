@@ -5,7 +5,7 @@ Fork this repository and build nFactorial Ai Cup 2024 projects
 
 ## < OrtaqZan >
 
-## < Jasyl Koz: This Kazakh phrase means "Green Eye," suggesting watchful observation of the environment. description, technical considerations, etc. >
+## < . description, technical considerations, etc. >
 
 
 ## Typeform to submit:
