@@ -1,11 +1,11 @@
-package benomads.jasyl_koz;
+package benomads.ortaq_zan;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class JasylKozApplication {
+public class OrtaqZanApplication {
     public static void main(String[] args) {
-        SpringApplication.run(JasylKozApplication.class, args);
+        SpringApplication.run(OrtaqZanApplication.class, args);
     }
 }
