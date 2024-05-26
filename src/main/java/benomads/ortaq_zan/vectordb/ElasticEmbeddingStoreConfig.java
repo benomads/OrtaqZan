@@ -12,10 +12,10 @@ public class ElasticEmbeddingStoreConfig {
     @Bean
     EmbeddingStore<TextSegment> embeddingStore() {
         return ElasticsearchEmbeddingStore.builder()
-            .serverUrl("https://my-deployment-08331c.es.us-central1.gcp.cloud.es.io")
+            .serverUrl(System.getenv("ELASTICSEARCH_SERVER_URL"))
             .userName("elastic")
-            .password("idgCIxgG0GeNaj5l1uhPWrps")
-            .dimension(768)
+            .password(System.getenv("ELASTICSEARCH_SERVER_PASSWORD"))
+            .dimension(368)
             .build();
     }
 
