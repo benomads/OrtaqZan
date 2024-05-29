@@ -5,7 +5,7 @@ Fork this repository and build nFactorial Ai Cup 2024 projects
 
 ## < OrtaqZan >
 
-## < . description, technical considerations, etc. >
+## < AI-Powered Legal Assistant. Leveraged Spring Boot, LangChain4j, Elasticsearch, and GPT-4o to deliver accurate legal guidance, contract analysis, and multilingual support. >
 
 
 ## Typeform to submit:
